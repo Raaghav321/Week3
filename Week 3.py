@@ -141,15 +141,20 @@ def showMontePi(numdDarts):
     bb = turtle.Turtle()
 
 
+    scn.set1dcoordinates(-2,-2,2,2)
 
+    bb.penup()
+    bb.goto(-1,0)
+    bb.pendown()
+    bb.goto(1,0)
 
+    bb.penup()
+    bb.goto(0,1)
+    bb.pendown()
+    bb.goto(0,-1)
 
-
-
-
-
-
-
+    inCircle=0
+    bb.penup()
 
 print(c)
 
