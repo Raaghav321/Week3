@@ -87,10 +87,8 @@ if a > b :
     c=45
     if b>c:
 
-else:
-  a=25
-else :
-    c = 1050
+
+     c = 1050
     if b==a:
         c=25
 
@@ -114,6 +112,40 @@ else:
     else:
         ans=75
 print(ans)
+
+def montePi(numDarts):
+
+    inCircle = 0
+
+    for i in range(numDarts):
+          x = random.random()
+          y = random.random()
+
+          distance = math.sqrt(x**2+ y**2)
+
+    t.goto(x,y)
+
+    if distance<= 1:
+
+        inCircle=inCircle + 1
+
+    pi = inCircle / numDarts
+    return pi
+
+print(montePi(42425644))
+
+import turtle
+
+def showMontePi(numdDarts):
+    scn = turtle.Screen()
+    bb = turtle.Turtle()
+
+
+
+
+
+
+
 
 
 
