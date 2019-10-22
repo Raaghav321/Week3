@@ -126,8 +126,15 @@ def montePi(numDarts):
     t.goto(x,y)
 
     if distance<= 1:
+       t.color("blue")
+    else:
+       t.color("red")
 
-        inCircle=inCircle + 1
+
+       t.dot()
+
+
+    inCircle=inCircle + 1
 
     pi = inCircle / numDarts
     return pi
@@ -157,6 +164,33 @@ def showMontePi(numdDarts):
     bb.penup()
 
 print(c)
+
+for i in range(numDarts):
+        x = random.random()
+        y = random.random()
+
+        distance = math.sqrt(x**2 + y**2)
+
+        t.goto(x, y)
+
+        if distance <= 1:
+            inCircle = inCircle + 1
+            t.color("blue")
+        else:
+            t.color("red")
+
+        t.dot()
+
+    pi = inCircle / numDarts * 4
+    scn.exitonclick()
+    return pi
+
+showMontePi(1000)
+
+#  Your Task:
+#  Modify the simulation to plot points in the entire circle.  You will have to
+#    adjust the calculated value of pi accordingly.
+© 2019 GitHub, Inc.
 
 
 
