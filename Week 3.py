@@ -117,33 +117,25 @@ def montePi(numDarts):
 
     inCircle = 0
 
+
     for i in range(numDarts):
           x = random.random()
           y = random.random()
 
           distance = math.sqrt(x**2+ y**2)
 
-    t.goto(x,y)
 
     if distance<= 1:
-       t.color("blue")
-    else:
-       t.color("red")
+        inCircle = inCircle + 1
 
-
-       t.dot()
-
-
-    inCircle=inCircle + 1
-
-    pi = inCircle / numDarts
+    pi = inCircle / numDarts*4
     return pi
 
 print(montePi(42425644))
 
 import turtle
 
-def showMontePi(numdDarts):
+def showMontePi(numDarts):
     scn = turtle.Screen()
     bb = turtle.Turtle()
 
@@ -163,34 +155,32 @@ def showMontePi(numdDarts):
     inCircle=0
     bb.penup()
 
-print(c)
-
-for i in range(numDarts):
-        x = random.random()
-        y = random.random()
+    for i in range(numDarts):
+        x = -1. + 2..random()
+        y = -1. + 2..random()
 
         distance = math.sqrt(x**2 + y**2)
 
-        t.goto(x, y)
+        bb.goto(x, y)
 
         if distance <= 1:
             inCircle = inCircle + 1
-            t.color("blue")
+            bb.color("blue")
         else:
-            t.color("red")
+            bb.color("red")
 
-        t.dot()
+        bb.dot()
 
-    pi = inCircle / numDarts * 4
+    pi = inCircle / numDarts*4
     scn.exitonclick()
     return pi
 
-showMontePi(1000)
+    showMontePi(1000)
 
 #  Your Task:
 #  Modify the simulation to plot points in the entire circle.  You will have to
 #    adjust the calculated value of pi accordingly.
-© 2019 GitHub, Inc.
+
 
 
 
