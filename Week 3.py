@@ -1,10 +1,11 @@
 # Starting off
-
 print(22/7)
 print(355/113)
-
 import math
+
+
 print(9801/(2206 * math.sqrt(2)))
+
 
 def archimedes(numSides):
     innerAngleB = 360.0 / numSides
@@ -35,14 +36,38 @@ for x in range(1,6):
 print(acc)
 
 #compute the sum of the first 100 even numbers
+acc = 2
+for x in range(2,101):
+    acc = acc+x
+print(acc)
+
 #compute the sum of the first 50 odd numbers
+acc=2
+for x in range(1,51):
+    acc=acc+x
+print(acc)
+
 #compute the average of the first 100 odd numbers
-#   N is a parameter
-#write a function called factorial that computes the product of the first N
-#Each number is the Fibonacchi sequence  id the sum of the previous 2 numbers
-#   The first numbers in the sequence are 1 and 1. Compute the 10th
-#   Fibonacci Sequence
-#Write a function to compute the Nth Fibonacci Sequence, Where N is the parameter
+acc =2
+for x in range(1,101):
+    acc=acc+x
+print(acc/100)
+
+# Write a function that returns the average of the first N numbers, where N is a parameter.
+acc = 1
+for x in range(1, 10):
+    acc = acc + x
+n=int(input("Input a number to compute the average of all numbers leading up to it : "))
+
+# Write a function called factorial that computes the product of the first N numbers, where N is a parameter.
+def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n-1)
+n=int(input("Input a number to compute the factorial : "))
+print(factorial(n))
+
 
 #You may assume that N will be greater than or equal to 3
 #AVERAGE=83.33
@@ -176,10 +201,6 @@ def showMontePi(numDarts):
     return pi
 
     showMontePi(1000)
-
-#  Your Task:
-#  Modify the simulation to plot points in the entire circle.  You will have to
-#    adjust the calculated value of pi accordingly.
 
 
 
